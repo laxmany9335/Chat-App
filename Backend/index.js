@@ -26,7 +26,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "https://banter-frontend.onrender.com", // Vite dev server
+    origin: "https://chat-app-dhrv.onrender.com/", // Vite dev server
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true, // If sending cookies/auth headers
   })
@@ -66,7 +66,7 @@ const server = app.listen(PORT, () => {
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "https://banter-frontend.onrender.com",
+    origin: "https://chat-app-dhrv.onrender.com/",
   },
 }); 
 
