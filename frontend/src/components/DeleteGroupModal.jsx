@@ -32,7 +32,7 @@ const DeleteGroupModal = ({
       // Use the apiConnector for the API call
       const data = await apiConnector(
         "GET",
-        `https://banter-backend-vdd3.onrender.com/api/v1/auth/user`,
+        `https://chat-app-backend-r7kq.onrender.com/api/v1/auth/user`,
         null, // No body data for GET request
         headers, // Pass headers correctly
         { search } // Use query params
@@ -66,7 +66,7 @@ const DeleteGroupModal = ({
       // Use the apiConnector for the API call
       const data = await apiConnector(
         "PUT",
-        `https://banter-backend-vdd3.onrender.com/api/v1/auth/chat/groupadd`,
+        `https://chat-app-backend-r7kq.onrender.com/api/v1/auth/chat/groupadd`,
         {
           chatId: selectedChat._id,
           userId: usertoAdd._id,
@@ -108,7 +108,7 @@ const DeleteGroupModal = ({
       // Use the apiConnector for the API call
       const data = await apiConnector(
         "PUT",
-        `https://banter-backend-vdd3.onrender.com/api/v1/auth/chat/groupremove`,
+        `https://chat-app-backend-r7kq.onrender.com/api/v1/auth/chat/groupremove`,
         {
           chatId: selectedChat._id,
           userId: usertoRemove._id,
@@ -151,7 +151,7 @@ const DeleteGroupModal = ({
       // Use the apiConnector for the API call
       const data = await apiConnector(
         "PUT",
-        `https://banter-backend-vdd3.onrender.com/api/v1/auth/chat/rename`,
+        `https://chat-app-backend-r7kq.onrender.com/api/v1/auth/chat/rename`,
         { chatId: selectedChat._id, chatName: groupChatname }, // No body data for GET request
         headers, // Pass headers correctly
         null // Use query params

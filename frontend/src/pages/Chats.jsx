@@ -13,7 +13,7 @@ import io from "socket.io-client";
 import { toggleSocket } from "../slices/socketSlice";
 import Reciever from '../components/Reciever';
 
-const ENDPOINT = "https://banter-backend-vdd3.onrender.com";
+const ENDPOINT = "https://chat-app-backend-r7kq.onrender.com";
 var socket, selectedChatCompare;
 
 const Chats = () => {
@@ -44,7 +44,7 @@ const Chats = () => {
           // Use the apiConnector for the API call
               const data = await apiConnector(
                 "GET",
-                `https://banter-backend-vdd3.onrender.com/api/v1/auth/message/${selectedChat._id}`, // Include chatId in the URL
+                `https://chat-app-backend-r7kq.onrender.com/api/v1/auth/message/${selectedChat._id}`, // Include chatId in the URL
                 null, // No body data for GET request
                 headers,
                 null // Pass headers correctly
