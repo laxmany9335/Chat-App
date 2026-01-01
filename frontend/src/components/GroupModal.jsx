@@ -29,7 +29,7 @@ const GroupModal = ({ fetchchatsagain, setFetchChatsAgain }) => {
       // Use the apiConnector for the API call
       const data = await apiConnector(
         "GET",
-        `https://banter-backend-vdd3.onrender.com/api/v1/auth/user`,
+        `https://chat-app-backend-r7kq.onrender.com/api/v1/auth/user`,
         null, // No body data for GET request
         headers, // Pass headers correctly
         { search } // Use query params
@@ -60,7 +60,7 @@ const GroupModal = ({ fetchchatsagain, setFetchChatsAgain }) => {
       // Use the apiConnector for the API call
       const data = await apiConnector(
         "POST",
-        `https://banter-backend-vdd3.onrender.com/api/v1/auth/chat/group`,
+        `https://chat-app-backend-r7kq.onrender.com/api/v1/auth/chat/group`,
         {
           name: groupChatname,
           users: JSON.stringify(selectedUsers.map((user) => user._id)),

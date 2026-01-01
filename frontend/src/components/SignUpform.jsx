@@ -57,7 +57,7 @@ const SignUpform = () => {
       // Send request using apiConnector
       const response = await apiConnector(
         "POST",
-        "https://banter-backend-vdd3.onrender.com/api/v1/auth/user/signup",
+        "https://chat-app-backend-r7kq.onrender.com/api/v1/auth/user/signup",
         dataToSend
       );
 

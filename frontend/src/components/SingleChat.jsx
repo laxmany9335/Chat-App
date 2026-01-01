@@ -59,7 +59,7 @@ const SingleChat = ({
         // Use the apiConnector for the API call
         const data = await apiConnector(
           "POST",
-          `https://banter-backend-vdd3.onrender.com/api/v1/auth/message`,
+          `https://chat-app-backend-r7kq.onrender.com/api/v1/auth/message`,
           { content: newMessage, chatId: selectedChat._id }, // No body data for GET request
           headers, // Pass headers correctly
           null // Use query params
